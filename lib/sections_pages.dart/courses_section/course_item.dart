@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class CourseItem extends StatelessWidget {
@@ -13,19 +14,21 @@ class CourseItem extends StatelessWidget {
           fit: BoxFit.fitWidth,
         ),
         const SizedBox(height: 4),
-        const Text(
-          'Criação de Apps Web e Mobile com Flutter',
-          style: TextStyle(
-            fontSize: 15,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
+        const Flexible(
+          child: Text(
+            'Criação de Apps Web e Mobile com Flutter',
+            style: TextStyle(
+              fontSize: 15,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
-        const Text(
+        const AutoSizeText(
           'Gabriel Zorzan',
           style: TextStyle(color: Colors.grey),
         ),
-        const Text(
+        const AutoSizeText(
           'R\$ 40,00',
           style: TextStyle(
             fontSize: 14,
